@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Presentation/Views/HeroView.uss?fileID=7433441132597879392&amp;guid=26755b0ae9c025d4b9300ca3774fc6c5&amp;type=3#HeroView" />
+    <ui:VisualElement name="VisualElement" class="mainContainer" style="flex-grow: 1; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+        <ui:Label text="Label" name="HeroName" class="hero-stat hero-name" />
+        <ui:Label text="Label" name="HeroLevel" class="hero-stat" />
+        <ui:Label text="Label" name="HeroPower" class="hero-stat" />
+        <ui:Button text="Улучшить" name="HeroUpgradeButton" class="hero-upgrade-button" />
+    </ui:VisualElement>
+</ui:UXML>
