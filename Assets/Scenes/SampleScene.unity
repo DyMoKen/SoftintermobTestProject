@@ -439,6 +439,12 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects: []
   _heroPresenter: {fileID: 460808381}
+  _name: "\u0413\u0435\u0440\u043E\u0439"
+  _level: 1
+  _power: 10
+  _strength: 1
+  _dexterity: 1
+  _intelligence: 1
 --- !u!4 &1970346852
 Transform:
   m_ObjectHideFlags: 0

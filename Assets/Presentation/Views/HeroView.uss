@@ -47,4 +47,5 @@
 
 .hero-name {
     font-size: 20px;
+    -unity-font-style: bold;
 }

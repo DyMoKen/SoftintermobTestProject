@@ -4,6 +4,9 @@
         <ui:Label text="Label" name="HeroName" class="hero-stat hero-name" />
         <ui:Label text="Label" name="HeroLevel" class="hero-stat" />
         <ui:Label text="Label" name="HeroPower" class="hero-stat" />
+        <ui:Label text="Label" name="HeroStrength" class="hero-stat" />
+        <ui:Label text="Label" name="HeroDexterity" class="hero-stat" />
+        <ui:Label text="Label" name="HeroIntelligence" class="hero-stat" />
         <ui:Button text="Улучшить" name="HeroUpgradeButton" class="hero-upgrade-button" />
     </ui:VisualElement>
 </ui:UXML>
