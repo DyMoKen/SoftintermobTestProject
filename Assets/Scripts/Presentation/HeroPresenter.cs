@@ -15,6 +15,7 @@ namespace Presentation
         private Label _nameLabel;
         private Label _levelLabel;
         private Label _powerLabel;
+        private Label _healthLabel;
         private Label _strengthLabel;
         private Label _dexterityLabel;
         private Label _intelligenceLabel;
@@ -41,6 +42,7 @@ namespace Presentation
             _nameLabel = root.Q<Label>("HeroName");
             _levelLabel = root.Q<Label>("HeroLevel");
             _powerLabel = root.Q<Label>("HeroPower");
+            _healthLabel = root.Q<Label>("HeroHealth");
             _strengthLabel = root.Q<Label>("HeroStrength");
             _dexterityLabel = root.Q<Label>("HeroDexterity");
             _intelligenceLabel = root.Q<Label>("HeroIntelligence");
@@ -52,6 +54,7 @@ namespace Presentation
             
             _hero.Level.Subscribe(value => _levelLabel.text = $"Уровень: {value}").AddTo(_disposables);
             _hero.Power.Subscribe(value => _powerLabel.text = $"Урон: {value}").AddTo(_disposables);
+            _hero.Health.Subscribe(value => _healthLabel.text = $"ХП: {value}").AddTo(_disposables);
             _hero.Strength.Subscribe(value => _strengthLabel.text = $"Сила: {value}").AddTo(_disposables);
             _hero.Dexterity.Subscribe(value => _dexterityLabel.text = $"Ловкость: {value}").AddTo(_disposables);
             _hero.Intelligence.Subscribe(value => _intelligenceLabel.text = $"Интеллект: {value}").AddTo(_disposables);
