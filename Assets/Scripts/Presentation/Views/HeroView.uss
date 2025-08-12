@@ -29,11 +29,15 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
 }
 
 .hero-upgrade-button:hover {
     background-color: rgb(76, 174, 76);
     scale: 1.1 1.1;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
 }
 
 .mainContainer {
@@ -48,4 +52,9 @@
 .hero-name {
     font-size: 20px;
     -unity-font-style: bold;
+}
+
+.hero-upgrade-button:active {
+    background-color: rgb(62, 144, 62);
+    color: rgb(27, 27, 27);
 }

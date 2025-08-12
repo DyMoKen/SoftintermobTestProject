@@ -9,23 +9,16 @@ using VContainer.Unity;
 
 namespace Infrastructure
 {
-    public class GameLifetimeScope : LifetimeScope
+    public class GameInstaller : LifetimeScope
     {
         [SerializeField] private HeroPresenter _heroPresenter;
-
-        [Header("Hero details")]
-        [SerializeField] private string _name;
-        [SerializeField] private int _level;
-        [SerializeField] private int _power;
-        [SerializeField] private int _strength;
-        [SerializeField] private int _dexterity;
-        [SerializeField] private int _intelligence;
+        [SerializeField] private HeroConfig _heroConfig;
         protected override void Configure(IContainerBuilder builder)
         {
             var options = builder.RegisterMessagePipe();
             builder.RegisterMessageBroker<HeroUpgradeMessage>(options);
 
-            var hero = new HeroModel(_name, _level, _power, _strength, _dexterity, _intelligence);
+            var hero = new HeroModel(_heroConfig);
             
             builder.RegisterInstance(hero);
             builder.Register<UpgradeHeroUseCase>(Lifetime.Singleton);
